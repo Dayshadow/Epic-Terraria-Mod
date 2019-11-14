@@ -1,0 +1,3 @@
+displayName = Dayshadow's Mod
+author = Dayshadow
+version = 0.1
