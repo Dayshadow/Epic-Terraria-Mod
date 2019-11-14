@@ -11,9 +11,11 @@
     <Exec Command="&quot;$(tMLBuildServerPath)&quot; -build $(ProjectDir) -eac $(TargetPath) -define $(DefineConstants) -unsafe $(AllowUnsafeBlocks)" />
   </Target>
   <ItemGroup>
-    <Compile Remove="Projectiles\Class1.cs" />
+    <Compile Remove="NewFolder\**" />
+    <EmbeddedResource Remove="NewFolder\**" />
+    <None Remove="NewFolder\**" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="NewFolder\" />
+    <Compile Remove="Projectiles\Class1.cs" />
   </ItemGroup>
 </Project>
