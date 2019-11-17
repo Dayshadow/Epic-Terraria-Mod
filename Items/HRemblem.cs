@@ -22,6 +22,7 @@ namespace DayshadowsMod.Items
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             player.allDamage += 0.13f;
+            player.meleeSpeed += 0.5f;
         }
     }
 }

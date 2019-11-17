@@ -21,8 +21,8 @@ namespace DayshadowsMod.Items
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            player.moveSpeed += 50f;
-            player.meleeSpeed += 50f;
+            player.moveSpeed += 0.5f;
+            player.meleeSpeed += 0.5f;
         }
     }
 }
