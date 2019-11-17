@@ -4,7 +4,7 @@ using Terraria.ID;
 
 namespace DayshadowsMod.Items
 {
-	public class Yoyo : ModItem
+	public class PeppyYoyo : ModItem
 	{
 		public override void SetStaticDefaults() 
 		{
@@ -37,7 +37,7 @@ namespace DayshadowsMod.Items
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.DirtBlock, 1);
+            recipe.AddIngredient(ItemID.DirtBlock, 2);
             recipe.AddTile(TileID.WorkBenches);
             recipe.SetResult(this);
             recipe.AddRecipe();

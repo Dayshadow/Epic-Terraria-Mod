@@ -3,14 +3,15 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 using Terraria.ID;
-
+using static Terraria.ModLoader.ModContent;
 
 namespace DayshadowsMod.Projectiles
 {
-    class GunslingerYoyoProjectile : ModProjectile // have them act as the bubble gun projectiles
+    class PeppyYoyoPro : ModProjectile // have them act as the bubble gun projectiles
     {
         public override void SetStaticDefaults() // o
         {
+            DisplayName.SetDefault("PeppyPro");
             // The following sets are only applicable to yoyo that use aiStyle 99.
             // YoyosLifeTimeMultiplier is how long in seconds the yoyo will stay out before automatically returning to the player. 
             // Vanilla values range from 3f(Wood) to 16f(Chik), and defaults to -1f. Leaving as -1 will make the time infinite.
@@ -55,7 +56,7 @@ namespace DayshadowsMod.Projectiles
             Projectile.NewProjectile(
                 projectile.position,
                 new Vector2(0, 0), // doesn't have veleocity
-                ProjectileType<HitcircleProjectile>, // what the projectile is
+                ProjectileType<HitcircleProjectile>(), // what the projectile is
                 20,// damage of the projectile that is spawned when the yoyo hits an npc          
                 2f,// any kb 0 - 20f yum
                 projectile.owner // just tells it that you own the yoyo projectiles so it can usue ur bonuses and stuff

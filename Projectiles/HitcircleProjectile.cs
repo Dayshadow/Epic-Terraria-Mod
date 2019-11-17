@@ -11,7 +11,7 @@ namespace DayshadowsMod.Projectiles
     {
         public override void SetStaticDefaults() // o
         {
-            
+            DisplayName.SetDefault("Hitcircle");
         }
 
         public override void SetDefaults()
@@ -20,20 +20,21 @@ namespace DayshadowsMod.Projectiles
             projectile.height = 16;
             projectile.timeLeft = 300;
             // aiStyle 99 is used for all yoyos, and is Extremely suggested, as yoyo are extremely difficult without them
-            projectile.aiStyle = 99;
+            projectile.aiStyle = 72;
             projectile.friendly = true;
             projectile.penetrate = -1;
             projectile.melee = true;
             projectile.scale = 1f;
         }
         /*
-         * garhu:
+         * garhu: pushed; also yeah the image is 16x16
          * 
-         * dayshadow: k add the image oh push it to github ig
+         * dayshadow: is the image 16x16
          * */
+         /*
         public override void AI()
         {
             projectile.rotation += 0.02; // done just makes it spin
-        }
+        } */
     }
 }
