@@ -7,5 +7,7 @@ namespace DayshadowsMod
 		public DayshadowsMod()
 		{
 		}
-	}
+	} //garhu aded a coment
+    //garhu added another comment
+
 }
