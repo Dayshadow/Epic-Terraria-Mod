@@ -15,10 +15,10 @@ namespace DayshadowsMod.Items
 		public override void SetDefaults() 
 		{
             item.useStyle = 5;
-            item.width = 24;
+            item.width = 24; // one last comment
             item.height = 24;
             item.useAnimation = 25; //garhu commented
-            item.useTime = 25;
+            item.useTime = 25; // another gahru comment
             item.shootSpeed = 16f;
             item.knockBack = 1f;
             item.damage = 72;
