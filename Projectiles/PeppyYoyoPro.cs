@@ -58,20 +58,10 @@ namespace DayshadowsMod.Projectiles
                 new Vector2(Main.rand.NextFloat(-1, 1), Main.rand.NextFloat(-1, 1)), // doesn't have veleocity
                 ProjectileType<HitcircleProjectile>(), // what the projectile is
                 20,// damage of the projectile that is spawned when the yoyo hits an npc          
-                2f,// any kb 0 - 20f yum
+                2f,// any kb 0 - 20f
                 projectile.owner // just tells it that you own the yoyo projectiles so it can usue ur bonuses and stuff
                 );
         }
-
-
-
-        /*
-         * garhu: ok ok ok
-         * in the new projectile file
-         * gotta go soon
-         *
-         * 
-         */
 
 
     }
