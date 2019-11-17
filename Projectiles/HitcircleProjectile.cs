@@ -16,6 +16,8 @@ namespace DayshadowsMod.Projectiles
 
         public override void SetDefaults()
         {
+            projectile.alpha = 0;
+
             projectile.width = 16;
             projectile.height = 16;
             projectile.timeLeft = 300;
@@ -27,14 +29,32 @@ namespace DayshadowsMod.Projectiles
             projectile.scale = 1f;
         }
         /*
-         * garhu: pushed; also yeah the image is 16x16
+         * garhu: pushed also yeah the image is 16x16
          * 
          * dayshadow: is the image 16x16
          * */
-         /*
+
+            public float Timer
+        {
+            get => projectile.ai[0];
+            set => projectile.ai[0] = value;
+        }
+
         public override void AI()
         {
-            projectile.rotation += 0.02; // done just makes it spin
-        } */
+            Timer++;
+            projectile.rotation += 0.02f; // done just makes it spin
+            projectile.position += projectile.velocity;
+            /*
+            if(Timer > 200)
+            {
+                projectile.alpha += 255/100;
+            }*/
+
+            if (Timer > 200) // For making the projectile fade in
+            {
+                projectile.alpha = (int)(255.0f * (1 - (Timer / 200)));
+            }
+        }
     }
 }

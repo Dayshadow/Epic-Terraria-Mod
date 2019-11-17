@@ -15,7 +15,7 @@ namespace DayshadowsMod.Projectiles
             // The following sets are only applicable to yoyo that use aiStyle 99.
             // YoyosLifeTimeMultiplier is how long in seconds the yoyo will stay out before automatically returning to the player. 
             // Vanilla values range from 3f(Wood) to 16f(Chik), and defaults to -1f. Leaving as -1 will make the time infinite.
-            ProjectileID.Sets.YoyosLifeTimeMultiplier[projectile.type] = 2f;
+            ProjectileID.Sets.YoyosLifeTimeMultiplier[projectile.type] = -1f;
             // YoyosMaximumRange is the maximum distance the yoyo sleep away from the player. 
             // Vanilla values range from 130f(Wood) to 400f(Terrarian), and defaults to 200f
             ProjectileID.Sets.YoyosMaximumRange[projectile.type] = 325f;
@@ -55,13 +55,16 @@ namespace DayshadowsMod.Projectiles
         {
             Projectile.NewProjectile(
                 projectile.position,
-                new Vector2(0, 0), // doesn't have veleocity
+                new Vector2(Main.rand.NextFloat(-1, 1), Main.rand.NextFloat(-1, 1)), // doesn't have veleocity
                 ProjectileType<HitcircleProjectile>(), // what the projectile is
                 20,// damage of the projectile that is spawned when the yoyo hits an npc          
                 2f,// any kb 0 - 20f yum
                 projectile.owner // just tells it that you own the yoyo projectiles so it can usue ur bonuses and stuff
                 );
         }
+
+
+
         /*
          * garhu: ok ok ok
          * in the new projectile file

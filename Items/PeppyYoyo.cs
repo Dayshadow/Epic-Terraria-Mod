@@ -26,7 +26,7 @@ namespace DayshadowsMod.Items
 
             item.melee = true;
             item.channel = true;
-            // item.noMelee = true;
+            item.noMelee = true;
             item.noUseGraphic = true;
 
             item.UseSound = SoundID.Item1;
