@@ -6,7 +6,7 @@ namespace DayshadowsMod
 	{
 		public DayshadowsMod()
 		{
-            // why are you like this
+            // why are you like this visual studio
 		}
 	}
 }
