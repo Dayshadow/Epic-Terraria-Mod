@@ -2,7 +2,7 @@
 using Terraria.ModLoader;
 using Terraria.ID;
 
-namespace FirstMod.Items
+namespace DayshadowsMod.Items
 {
     public class Genetics : ModItem
     {
