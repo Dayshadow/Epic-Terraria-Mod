@@ -17,7 +17,7 @@ namespace DayshadowsMod.Items
             item.useStyle = 5;
             item.width = 24;
             item.height = 24;
-            item.useAnimation = 25;
+            item.useAnimation = 25; //garhu commented
             item.useTime = 25;
             item.shootSpeed = 16f;
             item.knockBack = 1f;
