@@ -2,7 +2,7 @@
 using Terraria.ModLoader;
 using Terraria.ID;
 
-namespace FirstMod.Items
+namespace DayshadowsMod.Items
 {
     public class XPTabletPen : ModItem
     {
@@ -16,7 +16,7 @@ namespace FirstMod.Items
             item.damage = 30;
             item.ranged = true;
             item.width = 10;
-            item.height = 10;
+            item.height = 10; // he be double timing
             item.maxStack = 999;
             item.consumable = true;
             item.knockBack = 1f;

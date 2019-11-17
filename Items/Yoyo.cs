@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ModLoader;
 using Terraria.ID;
 
-namespace FirstMod.Items
+namespace DayshadowsMod.Items
 {
 	public class Yoyo : ModItem
 	{

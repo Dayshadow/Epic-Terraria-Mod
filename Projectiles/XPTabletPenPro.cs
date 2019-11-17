@@ -2,7 +2,7 @@
 using Terraria.ModLoader;
 using Terraria.ID;
 
-namespace FirstMod.Projectiles
+namespace DayshadowsMod.Projectiles
 {
     public class XPTabletPenPro : ModProjectile
     {

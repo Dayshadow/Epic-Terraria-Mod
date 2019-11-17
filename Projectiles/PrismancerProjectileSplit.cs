@@ -38,10 +38,10 @@ namespace DayshadowsMod.Projectiles
         }
         public override void Kill(int timeLeft)
         {
-            Dust.NewDust(projectile.oldPosition, 30, 30, mod.DustType("PrismancerDust"), projectile.velocity.X, projectile.velocity.Y);
+            Dust.NewDust(projectile.oldPosition, 30, 30, mod.DustType("PrismancerDust"), projectile.velocity.X, projectile.velocity.Y); // a change again
         }
 
-        static Vector2 RotateVector2d(Vector2 vector, float radians)
+        static Vector2 RotateVector2d(Vector2 vector, float radians) // Im testing stuff
         {
             Vector2 result = vector;
             result.X = result.X * (float)Math.Cos(radians) - result.Y * (float)Math.Sin(radians);

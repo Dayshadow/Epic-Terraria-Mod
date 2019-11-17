@@ -3,7 +3,7 @@ using Terraria.ModLoader;
 using Terraria.ID;
 using Microsoft.Xna.Framework;
 
-namespace FirstMod.Items
+namespace DayshadowsMod.Items
 {
     public class XPTablet : ModItem
     {
